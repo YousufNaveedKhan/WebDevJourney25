@@ -1,128 +1,137 @@
-# 🚀 Web Backend Development (SQL, PHP & Laravel)
+# WebDevJourney25: SQL, PHP and Laravel
 
-**Batch:** AI-2025-01B
-**Institute:** Aptech Gulshan 2
+Course material for a **web backend development** course taught by **Yousuf Naveed Khan**, Senior Instructor at Aptech Gulshan-2, Karachi, to Batch AI-2025-01B (November 2025 to January 2026).
 
----
+The course takes a student from database design in **MySQL**, through **Core PHP** (including a login system and a mini blog), to modern backend development with **Laravel 12**. It focuses on server-side development and databases, so the front end is kept simple (Bootstrap, and a little jQuery for AJAX).
 
-## 🌟 Course Overview
+Each lecture folder holds the code that was built in class. The course grows from simple to advanced, so the earlier lectures are basic on purpose.
 
-This repository serves as the **official learning hub for the 2nd Semester Web Backend Development course**.
-The course provides a complete backend journey — starting from **database design and SQL**, moving through **Core PHP**, and finally covering **modern backend development using the Laravel framework**.
+## Tech stack
 
-The focus of this repository is purely on **server-side development and database management**, ensuring a strong backend foundation.
+| Area | What is used |
+|---|---|
+| **Database** | MySQL, with phpMyAdmin or MySQL Workbench |
+| **SQL topics** | DDL and DML, aggregate functions, relationships and keys, joins, views, subqueries, stored procedures, triggers, transactions, indexes, user privileges, backup and recovery |
+| **Core PHP** | PHP 8 (procedural and object-oriented), `mysqli`, sessions, cookies, file handling, file uploads, `password_hash` |
+| **Framework** | Laravel 12 (PHP 8.2 or newer), Blade, Eloquent ORM, migrations, routing, controllers, Artisan |
+| **API work** | JSON endpoints in PHP, AJAX with jQuery 3.7, consuming an external REST API from Laravel (Quran API) |
+| **UI** | Bootstrap 5.3 |
+| **Tools** | XAMPP (Apache and MySQL), Composer, SQLite (Laravel's default development database), Git |
 
-> **Important Note:**
-> This repository does **not** include JavaScript or frontend technologies.
-> It strictly covers **SQL, PHP, and Laravel (server-side logic only)**.
+## What is inside
 
----
+| Module | Content | What you learn |
+|---|---|---|
+| [`01_MySQL`](./01_MySQL) | 13 lectures | SQL from first table to backup and security |
+| [`02_PHP`](./02_PHP) | 14 lectures, 2 projects, 2 assignments | Core PHP, CRUD, authentication, OOP and AJAX |
+| [`03_Laravel`](./03_Laravel) | 6 lecture projects | Laravel 12, Blade, API integration and Eloquent CRUD |
 
-## 📁 Repository Structure
+## 01_MySQL
 
-The repository is organized into three main modules for better clarity and learning flow:
+Each lecture is one `.sql` script. Run it in phpMyAdmin or MySQL Workbench and follow along.
 
-### 🗄️ 01_MySQL
+| Lecture | Topic |
+|---|---|
+| 01 | Database and table creation, inserting data |
+| 02 | Database operations and data manipulation (CRUD) |
+| 03 | Aggregate functions and table alteration |
+| 04 | Relationships and keys |
+| 05 | Joins and views |
+| 06 | Subqueries and nested queries |
+| 07 | Stored procedures and functions |
+| 08 | Triggers and transactions |
+| 09 | Indexes and performance optimization |
+| 10 | Data security and user management |
+| 11 | Advanced query techniques |
+| 12 | Database backup and recovery |
+| 13 | NoSQL integration and hybrid systems (notes) |
 
-A complete MySQL roadmap covering **Lecture 01 to Lecture 13**.
-It starts from basic database operations and gradually moves towards advanced concepts such as:
+## 02_PHP
 
-* CRUD Operations
-* Relationships
-* Stored Procedures & Triggers
-* Performance Optimization & Security
+| Lecture | Topic |
+|---|---|
+| 01 | Basics |
+| 02 | Loops |
+| 03 | Arrays |
+| 04 | Array methods |
+| 05 | String manipulation |
+| 06 | Form handling |
+| 07 | GET method and sessions |
+| 08 | Cookies |
+| 09 | File handling |
+| 10 | Path handling |
+| 11 | CRUD with MySQL |
+| 12 | File uploading |
+| 13 | Object-oriented PHP (a small login system with models and controllers) |
+| 14 | API and AJAX |
 
----
+### Projects
 
-### 🐘 02_PHP
+* **Login and Registration System** (`Projects/LRS`): register, log in and log out, passwords stored as hashes, sessions, and separate pages for the `admin` and `user` roles.
+* **Mini Blog App** (`Projects/MiniBlog App`): register and log in, create, edit and delete posts, and upload profile pictures, with a Bootstrap interface.
 
-This section covers **Core PHP (Server-Side Programming)** including:
+### Assignments
 
-* PHP fundamentals and syntax
-* Procedural & Object-Oriented Programming (OOP)
-* Form handling and authentication logic
-* File handling and AJAX-based API integration
+* **Mini Blog Application**: students build the blog on their own, with authentication, authorization, CRUD and secure coding.
+* **CV Uploader and Image Uploader**: file upload with validation, database storage, listing and deleting records.
 
----
+The assignment briefs are in [`02_PHP/Assignments`](./02_PHP/Assignments). Submissions are by GitHub only.
 
-### 🚩 03_Laravel
+## 03_Laravel
 
-Focused on **modern backend development using Laravel**, covering:
+Every folder is a complete Laravel 12 project.
 
-* MVC Architecture
-* Blade Templating Engine
-* Eloquent ORM
-* RESTful API development and real-world mini projects
+| Folder | Topic |
+|---|---|
+| `lec01-introduction` | Installing Laravel and understanding the project structure |
+| `lec02-routingandbladetemplatingengine` | Routes, views and Blade templates |
+| `lec03-quranAPI` | A controller that consumes the Al Quran Cloud API: list the surahs and read a surah |
+| `lec04-repeat-fatima` | Revision of the Quran API project |
+| `lec05-eloquentModel-1` | Eloquent model, migration and listing posts |
+| `lec06-eloquentModel-CRUD` | Full CRUD with Eloquent: add, edit and delete posts |
 
----
+## Getting started
 
-## 📚 Curriculum Progress
+You need: **XAMPP** (Apache and MySQL), **PHP 8.2 or newer** and **Composer** (for Laravel), and **Git**.
 
-### ✅ 01. MySQL Roadmap
+### MySQL
 
-| Lecture Range | Topics Covered                                                          | Status      |
-| ------------- | ----------------------------------------------------------------------- | ----------- |
-| **Lec 01–04** | Database Creation, CRUD Operations, Aggregate Functions & Relationships | ✅ Completed |
-| **Lec 05–08** | Joins, Views, Subqueries, Stored Procedures & Triggers                  | ✅ Completed |
-| **Lec 09–13** | Query Optimization, Security, Backup Strategies & Hybrid NoSQL Concepts | ✅ Completed |
+1. Start MySQL in the XAMPP Control Panel and open phpMyAdmin.
+2. Open a lecture's `.sql` file, then run it (Import, or paste it in the SQL tab).
 
----
+### PHP
 
-### ✅ 02. Core PHP (Server-Side Development)
+1. Copy the `02_PHP` folder into `C:\xampp\htdocs\`.
+2. Start **Apache** and **MySQL** in the XAMPP Control Panel.
+3. Create the database a lecture needs. The names used in the code are:
 
-| Lecture Range | Topics Covered                                                     | Status      |
-| ------------- | ------------------------------------------------------------------ | ----------- |
-| **Lec 01–05** | PHP Basics, Control Structures, Arrays & String Functions          | ✅ Completed |
-| **Lec 06–10** | Form Handling (GET/POST), Sessions, Cookies & File Operations      | ✅ Completed |
-| **Lec 11–14** | Database CRUD Operations, File Uploading, OOP Concepts & AJAX APIs | ✅ Completed |
-| **Projects**  | Login & Registration System (LRS) and Mini Blog Application        | ✅ Completed |
+   | Code | Database name |
+   |---|---|
+   | `Lec11-CRUD` | `lec11-crud` |
+   | `Lec13-OOP` | `students` |
+   | `Projects/LRS` | `lrs` |
+   | `Projects/MiniBlog App` | `miniBlog` |
 
----
+4. Open `http://localhost/02_PHP/` and choose a lecture.
 
-### ✅ 03. Laravel Framework
+The projects connect as `root` with an empty password, which is the XAMPP default for **local learning only**. Never use these settings on a real server.
 
-| Lecture Range | Topics Covered                                                    | Status      |
-| ------------- | ----------------------------------------------------------------- | ----------- |
-| **Lec 01–02** | Laravel Installation, Routing (with Parameters) & Blade Templates | ✅ Completed |
-| **Lec 03–04** | Controller Logic & Quran API Project (External API Integration)   | ✅ Completed |
-| **Lec 05–06** | Eloquent ORM (CRUD), Blog Application & Asset Management          | ✅ Completed |
-
----
-
-## ⚙️ Setup & Installation Guide
-
-Follow the steps below to run the projects locally:
-
-### 🗄️ MySQL Setup
-
-* Import the provided `.sql` files into **phpMyAdmin**
-* Execute queries to test database functionality
-
-### 🐘 PHP Setup
-
-* Place the `02_PHP` folder inside:
-
-```
-xampp/htdocs
-```
-
-* Start **Apache & MySQL** from XAMPP Control Panel
-
-### 🚩 Laravel Setup
+### Laravel
 
 ```bash
-git clone https://github.com/YousufNaveedKhan/BackendJourney25.git
-cd 03_Laravel/ProjectName
+git clone https://github.com/YousufNaveedKhan/WebDevJourney25.git
+cd WebDevJourney25/03_Laravel/lec06-eloquentModel-CRUD
 composer install
-php artisan migrate
+copy .env.example .env        # on macOS or Linux: cp .env.example .env
+php artisan key:generate
+php artisan migrate           # answer "yes" if it offers to create the SQLite database
 php artisan serve
 ```
 
----
+Open `http://127.0.0.1:8000`. Use the same steps for any other lecture folder. The Quran API lectures (`lec03` and `lec04`) need an internet connection.
 
-## 👨‍🏫 Instructor Details
+## About the instructor
 
-**Yousuf Naveed Khan**
-Senior Faculty – Aptech Gulshan 2
+**Yousuf Naveed Khan** is a software architect, educator and Hafiz-e-Quran based in Karachi, Pakistan, Founder & CEO of [GFT Solutions](https://wearegft.com) and Senior Instructor at Aptech Gulshan-2.
 
-> *"Master the data, control the logic, and the framework will follow."* 🚀
+[Website](https://yousufnaveedkhan.com) · [LinkedIn](https://www.linkedin.com/in/yousufnaveedkhan/) · [More course repositories](https://github.com/YousufNaveedKhan?tab=repositories)
